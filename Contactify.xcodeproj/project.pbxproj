@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		F2A213EB2A3398DA0062F25E /* ContactifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A213EA2A3398DA0062F25E /* ContactifyApp.swift */; };
-		F2A213ED2A3398DA0062F25E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A213EC2A3398DA0062F25E /* ContentView.swift */; };
 		F2A213EF2A3398DB0062F25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A213EE2A3398DB0062F25E /* Assets.xcassets */; };
 		F2A213F22A3398DB0062F25E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A213F12A3398DB0062F25E /* Preview Assets.xcassets */; };
 		F2A213FE2A33997E0062F25E /* ContactsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2A213FC2A33997D0062F25E /* ContactsDataModel.xcdatamodeld */; };
+		F2A214012A339ACA0062F25E /* ContactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A214002A339ACA0062F25E /* ContactsProvider.swift */; };
+		F2A214042A339B700062F25E /* EnvironmentValues+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A214032A339B700062F25E /* EnvironmentValues+Extension.swift */; };
+		F2A214062A339C6B0062F25E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A214052A339C6B0062F25E /* Contact.swift */; };
+		F2A214082A339E2C0062F25E /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A214072A339E2C0062F25E /* ContactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F2A213E72A3398DA0062F25E /* Contactify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contactify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A213EA2A3398DA0062F25E /* ContactifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactifyApp.swift; sourceTree = "<group>"; };
-		F2A213EC2A3398DA0062F25E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F2A213EE2A3398DB0062F25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2A213F12A3398DB0062F25E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2A213FD2A33997E0062F25E /* ContactsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactsDataModel.xcdatamodel; sourceTree = "<group>"; };
+		F2A214002A339ACA0062F25E /* ContactsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsProvider.swift; sourceTree = "<group>"; };
+		F2A214032A339B700062F25E /* EnvironmentValues+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+Extension.swift"; sourceTree = "<group>"; };
+		F2A214052A339C6B0062F25E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		F2A214072A339E2C0062F25E /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +59,13 @@
 		F2A213E92A3398DA0062F25E /* Contactify */ = {
 			isa = PBXGroup;
 			children = (
+				F2A214022A339B5C0062F25E /* Extensions */,
 				F2A213FF2A3399F60062F25E /* Provider */,
 				F2A213FA2A3399370062F25E /* Model */,
 				F2A213F92A3399260062F25E /* ViewModels */,
 				F2A213F82A33991F0062F25E /* Views */,
 				F2A213EA2A3398DA0062F25E /* ContactifyApp.swift */,
 				F2A213FB2A3399540062F25E /* Helpers */,
-				F2A213EC2A3398DA0062F25E /* ContentView.swift */,
 				F2A213EE2A3398DB0062F25E /* Assets.xcassets */,
 				F2A213F02A3398DB0062F25E /* Preview Content */,
 				F2A213FC2A33997D0062F25E /* ContactsDataModel.xcdatamodeld */,
@@ -78,6 +84,7 @@
 		F2A213F82A33991F0062F25E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2A214072A339E2C0062F25E /* ContactsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,6 +99,7 @@
 		F2A213FA2A3399370062F25E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2A214052A339C6B0062F25E /* Contact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,8 +114,17 @@
 		F2A213FF2A3399F60062F25E /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				F2A214002A339ACA0062F25E /* ContactsProvider.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		F2A214022A339B5C0062F25E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2A214032A339B700062F25E /* EnvironmentValues+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A214062A339C6B0062F25E /* Contact.swift in Sources */,
 				F2A213FE2A33997E0062F25E /* ContactsDataModel.xcdatamodeld in Sources */,
-				F2A213ED2A3398DA0062F25E /* ContentView.swift in Sources */,
 				F2A213EB2A3398DA0062F25E /* ContactifyApp.swift in Sources */,
+				F2A214012A339ACA0062F25E /* ContactsProvider.swift in Sources */,
+				F2A214042A339B700062F25E /* EnvironmentValues+Extension.swift in Sources */,
+				F2A214082A339E2C0062F25E /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
