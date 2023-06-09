@@ -11,6 +11,7 @@
 		F2A213ED2A3398DA0062F25E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A213EC2A3398DA0062F25E /* ContentView.swift */; };
 		F2A213EF2A3398DB0062F25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A213EE2A3398DB0062F25E /* Assets.xcassets */; };
 		F2A213F22A3398DB0062F25E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A213F12A3398DB0062F25E /* Preview Assets.xcassets */; };
+		F2A213FE2A33997E0062F25E /* ContactsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2A213FC2A33997D0062F25E /* ContactsDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F2A213EC2A3398DA0062F25E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F2A213EE2A3398DB0062F25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2A213F12A3398DB0062F25E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2A213FD2A33997E0062F25E /* ContactsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactsDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +53,16 @@
 		F2A213E92A3398DA0062F25E /* Contactify */ = {
 			isa = PBXGroup;
 			children = (
+				F2A213FF2A3399F60062F25E /* Provider */,
+				F2A213FA2A3399370062F25E /* Model */,
+				F2A213F92A3399260062F25E /* ViewModels */,
+				F2A213F82A33991F0062F25E /* Views */,
 				F2A213EA2A3398DA0062F25E /* ContactifyApp.swift */,
+				F2A213FB2A3399540062F25E /* Helpers */,
 				F2A213EC2A3398DA0062F25E /* ContentView.swift */,
 				F2A213EE2A3398DB0062F25E /* Assets.xcassets */,
 				F2A213F02A3398DB0062F25E /* Preview Content */,
+				F2A213FC2A33997D0062F25E /* ContactsDataModel.xcdatamodeld */,
 			);
 			path = Contactify;
 			sourceTree = "<group>";
@@ -65,6 +73,41 @@
 				F2A213F12A3398DB0062F25E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2A213F82A33991F0062F25E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2A213F92A3399260062F25E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F2A213FA2A3399370062F25E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2A213FB2A3399540062F25E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2A213FF2A3399F60062F25E /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A213FE2A33997E0062F25E /* ContactsDataModel.xcdatamodeld in Sources */,
 				F2A213ED2A3398DA0062F25E /* ContentView.swift in Sources */,
 				F2A213EB2A3398DA0062F25E /* ContactifyApp.swift in Sources */,
 			);
@@ -339,6 +383,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F2A213FC2A33997D0062F25E /* ContactsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F2A213FD2A33997E0062F25E /* ContactsDataModel.xcdatamodel */,
+			);
+			currentVersion = F2A213FD2A33997E0062F25E /* ContactsDataModel.xcdatamodel */;
+			path = ContactsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F2A213DF2A3398D90062F25E /* Project object */;
 }
