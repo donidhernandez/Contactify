@@ -12,6 +12,7 @@ struct ContactifyApp: App {
     var body: some Scene {
         WindowGroup {
             ContactsView()
+                .environment(\.managedObjectContext, ContactsProvider.shared.viewContext)
         }
     }
 }

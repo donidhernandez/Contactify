@@ -34,4 +34,10 @@ final class ContactsProvider {
             }
         }
     }
+    
+    func persists(in context: NSManagedObjectContext) throws {
+        if context.hasChanges {
+            try context.save()
+        }
+    }
 }
