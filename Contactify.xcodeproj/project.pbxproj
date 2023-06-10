@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2723E852A33EE220005C6D1 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E842A33EE220005C6D1 /* CreateTaskView.swift */; };
+		F2723E852A33EE220005C6D1 /* CreateContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E842A33EE220005C6D1 /* CreateContactView.swift */; };
 		F2723E892A340DB40005C6D1 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E882A340DB40005C6D1 /* ContactViewModel.swift */; };
+		F2723E8C2A3415BB0005C6D1 /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */; };
 		F2A213EB2A3398DA0062F25E /* ContactifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A213EA2A3398DA0062F25E /* ContactifyApp.swift */; };
 		F2A213EF2A3398DB0062F25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A213EE2A3398DB0062F25E /* Assets.xcassets */; };
 		F2A213F22A3398DB0062F25E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A213F12A3398DB0062F25E /* Preview Assets.xcassets */; };
@@ -29,8 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F2723E842A33EE220005C6D1 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		F2723E842A33EE220005C6D1 /* CreateContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactView.swift; sourceTree = "<group>"; };
 		F2723E882A340DB40005C6D1 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
 		F2A213E72A3398DA0062F25E /* Contactify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contactify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A213EA2A3398DA0062F25E /* ContactifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactifyApp.swift; sourceTree = "<group>"; };
 		F2A213EE2A3398DB0062F25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2723E8A2A34159C0005C6D1 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 		F2A213DE2A3398D90062F25E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		F2A213E92A3398DA0062F25E /* Contactify */ = {
 			isa = PBXGroup;
 			children = (
+				F2723E8A2A34159C0005C6D1 /* Validator */,
 				F2A214152A33A4C30062F25E /* Components */,
 				F2A214022A339B5C0062F25E /* Extensions */,
 				F2A213FF2A3399F60062F25E /* Provider */,
@@ -111,7 +122,7 @@
 				F2A2140D2A33A34F0062F25E /* ContactRowView.swift */,
 				F2A214162A33A8EE0062F25E /* ContactDetailView.swift */,
 				F2A2141C2A33B9420062F25E /* NoContactsView.swift */,
-				F2723E842A33EE220005C6D1 /* CreateTaskView.swift */,
+				F2723E842A33EE220005C6D1 /* CreateContactView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2A214172A33A8EE0062F25E /* ContactDetailView.swift in Sources */,
-				F2723E852A33EE220005C6D1 /* CreateTaskView.swift in Sources */,
+				F2723E852A33EE220005C6D1 /* CreateContactView.swift in Sources */,
 				F2A214192A33AAE60062F25E /* Header.swift in Sources */,
 				F2A2140C2A33A1090062F25E /* String+Extension.swift in Sources */,
 				F2723E892A340DB40005C6D1 /* ContactViewModel.swift in Sources */,
@@ -254,6 +265,7 @@
 				F2A214142A33A44C0062F25E /* TextAvatar.swift in Sources */,
 				F2A214042A339B700062F25E /* EnvironmentValues+Extension.swift in Sources */,
 				F2A2140E2A33A34F0062F25E /* ContactRowView.swift in Sources */,
+				F2723E8C2A3415BB0005C6D1 /* CreateValidator.swift in Sources */,
 				F2A214082A339E2C0062F25E /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

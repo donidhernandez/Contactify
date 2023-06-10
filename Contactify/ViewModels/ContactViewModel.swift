@@ -11,11 +11,18 @@ import CoreData
 final class ContactViewModel: ObservableObject {
     
     @Published var contact: Contact
+    @Published var hasError = false
+    @Published private(set) var error: CreateValidatorImpl.CreateValidatorError?
+    @Published private(set) var state: SubmissionState?
+
     let isNew: Bool
     private let provider: ContactsProvider
     private let context: NSManagedObjectContext
     
-    init(provider: ContactsProvider, contact: Contact? = nil) {
+    private let validator: CreateValidator
+    
+    init(provider: ContactsProvider, contact: Contact? = nil, validator: CreateValidator = CreateValidatorImpl()) {
+        self.validator = validator
         self.provider = provider
         self.context = provider.newContext
         if let contact,
@@ -29,7 +36,24 @@ final class ContactViewModel: ObservableObject {
     }
     
     func save() throws {
-        try provider.persists(in: context)
+        do {
+            try validator.validate(contact)
+            state = .submitting
+            try provider.persists(in: context)
+            state = .successful
+        } catch {
+            self.hasError = true
+            self.state = .unsuccessful
+            self.error = error as? CreateValidatorImpl.CreateValidatorError
+        }
     }
     
+}
+
+extension ContactViewModel {
+    enum SubmissionState {
+        case unsuccessful
+        case successful
+        case submitting
+    }
 }
