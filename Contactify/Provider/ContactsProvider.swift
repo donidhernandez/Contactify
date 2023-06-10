@@ -35,6 +35,10 @@ final class ContactsProvider {
         }
     }
     
+    func exists(contact: Contact, in context: NSManagedObjectContext) -> Contact? {
+        try? context.existingObject(with: contact.objectID) as? Contact
+    }
+    
     func persists(in context: NSManagedObjectContext) throws {
         if context.hasChanges {
             try context.save()
