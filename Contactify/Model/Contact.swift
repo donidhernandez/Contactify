@@ -19,6 +19,12 @@ final class Contact: NSManagedObject, Identifiable {
     @NSManaged var notes: String
     @NSManaged var email: String
     
+    var isValid: Bool {
+        !firstName.isEmpty &&
+        !lastName.isEmpty &&
+        !phoneNumber.isEmpty
+    }
+    
     override func awakeFromInsert() {
         super.awakeFromInsert()
         

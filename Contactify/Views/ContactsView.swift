@@ -13,27 +13,52 @@ struct ContactsView: View {
     @FetchRequest(fetchRequest: Contact.all()) private var contacts
     let provider = ContactsProvider.shared
     
+    @State private var contactToEdit: Contact?
+    
     var body: some View {
         NavigationStack {
-            if contacts.isEmpty {
-                NoContactsView()
-            } else {
-                List {
-                    ForEach(contacts) { contact in
-                        ZStack(alignment: .leading) {
-                            NavigationLink {
-                                ContactDetailView(contact: contact)
-                            } label: {
-                                EmptyView()
+            ZStack {
+                if contacts.isEmpty {
+                    NoContactsView()
+                } else {
+                    List {
+                        ForEach(contacts) { contact in
+                            ZStack(alignment: .leading) {
+                                NavigationLink {
+                                    ContactDetailView(contact: contact)
+                                } label: {
+                                    EmptyView()
+                                }
+                                .opacity(0)
+                                
+                                ContactRowView(provider: provider, contact: contact)
                             }
-                            .opacity(0)
-                            
-                            ContactRowView(provider: provider, contact: contact)
                         }
                     }
                 }
-                .navigationTitle("Contacts")
             }
+            .sheet(item: $contactToEdit, onDismiss: {
+                contactToEdit = nil
+            }, content: { contact in
+                NavigationStack {
+                    CreateContactView(vm: .init(provider: provider, contact: contact))
+                }
+            })
+            .navigationTitle("Contacts")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        contactToEdit = .empty(context: provider.newContext)
+                    } label: {
+                        Image(systemName: "plus")
+                            .font(.title3)
+                            .fontDesign(.rounded)
+                    }
+                    
+                }
+            }
+            
+            
         }
     }
 }
