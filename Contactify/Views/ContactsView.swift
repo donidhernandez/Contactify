@@ -13,6 +13,8 @@ struct ContactsView: View {
     @FetchRequest(fetchRequest: Contact.all()) private var contacts
     let provider = ContactsProvider.shared
     
+    @State private var searchConfig: SearchConfig = .init()
+    @State private var sort: Sort = .asc
     @State private var contactToEdit: Contact?
     @State var shouldShowSuccess = false
     
@@ -59,6 +61,7 @@ struct ContactsView: View {
                     }
                 }
             }
+            .searchable(text: $searchConfig.query)
             .sheet(item: $contactToEdit, onDismiss: {
                 contactToEdit = nil
             }, content: { contact in
@@ -84,6 +87,12 @@ struct ContactsView: View {
                         }
                 }
             }
+            .onChange(of: searchConfig, perform: { newConfig in
+                contacts.nsPredicate = Contact.filter(with: newConfig)
+            })
+            .onChange(of: sort, perform: { newSort in
+                contacts.nsSortDescriptors = Contact.sort(order: newSort)
+            })
             .navigationTitle("Contacts")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -95,6 +104,34 @@ struct ContactsView: View {
                             .fontDesign(.rounded)
                     }
                     
+                }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Menu {
+                        Picker(selection: $searchConfig.filter) {
+                            Text("All").tag(SearchConfig.Filter.all)
+                            Text("Favorites").tag(SearchConfig.Filter.fave)
+                        } label: {
+                            Text("Filter By")
+                        }
+                        .pickerStyle(.menu)
+                        
+                        
+                        Picker(selection: $sort) {
+                            Label("Asc", systemImage: "arrow.up").tag(Sort.asc)
+                            Label("Desc", systemImage: "arrow.down").tag(Sort.desc)
+                        } label: {
+                            Text("Sort By")
+                        }
+                        .pickerStyle(.menu)
+
+
+                    } label: {
+                        Image(systemName: "ellipsis")
+                            .symbolVariant(.circle)
+                            .font(.title2)
+                    }
+
                 }
             }
             

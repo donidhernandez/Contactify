@@ -10,6 +10,7 @@
 		F21768232A37B69000521911 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768222A37B69000521911 /* HapticsManager.swift */; };
 		F21768282A37EB0500521911 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768272A37EB0500521911 /* UserDefaultKeys.swift */; };
 		F217682A2A37F5F200521911 /* CheckMarkPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768292A37F5F200521911 /* CheckMarkPopoverView.swift */; };
+		F217682C2A3807F200521911 /* SearchConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217682B2A3807F200521911 /* SearchConfig.swift */; };
 		F2723E852A33EE220005C6D1 /* CreateContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E842A33EE220005C6D1 /* CreateContactView.swift */; };
 		F2723E892A340DB40005C6D1 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E882A340DB40005C6D1 /* ContactViewModel.swift */; };
 		F2723E8C2A3415BB0005C6D1 /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */; };
@@ -36,6 +37,7 @@
 		F21768222A37B69000521911 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		F21768272A37EB0500521911 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		F21768292A37F5F200521911 /* CheckMarkPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkPopoverView.swift; sourceTree = "<group>"; };
+		F217682B2A3807F200521911 /* SearchConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfig.swift; sourceTree = "<group>"; };
 		F2723E842A33EE220005C6D1 /* CreateContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactView.swift; sourceTree = "<group>"; };
 		F2723E882A340DB40005C6D1 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				F2A214092A33A0610062F25E /* NameList.swift */,
+				F217682B2A3807F200521911 /* SearchConfig.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				F2A214012A339ACA0062F25E /* ContactsProvider.swift in Sources */,
 				F2A214142A33A44C0062F25E /* TextAvatar.swift in Sources */,
 				F2A214042A339B700062F25E /* EnvironmentValues+Extension.swift in Sources */,
+				F217682C2A3807F200521911 /* SearchConfig.swift in Sources */,
 				F2A2140E2A33A34F0062F25E /* ContactRowView.swift in Sources */,
 				F2723E8C2A3415BB0005C6D1 /* CreateValidator.swift in Sources */,
 				F21768232A37B69000521911 /* HapticsManager.swift in Sources */,
