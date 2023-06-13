@@ -14,9 +14,20 @@ struct CreateContactView: View {
     @ObservedObject var vm: ContactViewModel
     @FocusState private var focusedField: Field?
     
+    private let successfulAction: () -> Void
+    
+    init(vm: ContactViewModel, successfulAction: @escaping () -> Void) {
+        self.successfulAction = successfulAction
+        self.vm = vm
+    }
+    
     func create() {
+        focusedField = nil
         do {
             try vm.save()
+            if vm.state == .successful {
+                dismiss()
+            }
         } catch {
            print(error)
         }
@@ -61,11 +72,23 @@ struct CreateContactView: View {
                 Text("OK")
             }
         }
+        .disabled(vm.state == .submitting)
+        .onChange(of: vm.state) { formState in
+            if formState == .successful {
+                dismiss()
+                successfulAction()
+            }
+        }
+        .overlay {
+            if vm.state == .submitting {
+                ProgressView()
+            }
+        }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     create()
-                    dismiss()
+                    
                 } label: {
                     Text("Done")
                 }
@@ -100,9 +123,9 @@ struct CreateContactView_Previews: PreviewProvider {
     static var previews: some View {
         
         let preview = ContactsProvider.shared
-        
+     
         NavigationStack {
-            CreateContactView(vm: .init(provider: preview))
+            CreateContactView(vm: .init(provider: preview)) {}
                 .environment(\.managedObjectContext, preview.viewContext)
         }
         

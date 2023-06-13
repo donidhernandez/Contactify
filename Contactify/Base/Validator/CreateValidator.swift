@@ -63,7 +63,7 @@ extension CreateValidatorImpl.CreateValidatorError {
         case .invalidEmail:
             return "The email format is not valid"
         case .invalidPhoneNumber:
-            return "Phone number can't be empty"
+            return "The phone number is not valid"
         case .emptyPhoneNumber:
             return "Phone number can't be empty"
         }

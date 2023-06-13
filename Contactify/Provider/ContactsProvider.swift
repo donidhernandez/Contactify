@@ -44,4 +44,15 @@ final class ContactsProvider {
             try context.save()
         }
     }
+    
+    func delete(_ contact: Contact, context: NSManagedObjectContext) throws {
+        if let existingContact = exists(contact: contact, in: context) {
+            context.delete(existingContact)
+            Task(priority: .background) {
+                try await context.perform {
+                    try context.save()
+                }
+            }
+        }
+    }
 }

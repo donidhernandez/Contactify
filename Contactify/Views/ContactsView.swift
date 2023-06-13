@@ -14,6 +14,7 @@ struct ContactsView: View {
     let provider = ContactsProvider.shared
     
     @State private var contactToEdit: Contact?
+    @State var shouldShowSuccess = false
     
     var body: some View {
         NavigationStack {
@@ -32,6 +33,27 @@ struct ContactsView: View {
                                 .opacity(0)
                                 
                                 ContactRowView(provider: provider, contact: contact)
+                                    .swipeActions(allowsFullSwipe: true) {
+                                        
+                                        Button(role: .destructive) {
+                                            do {
+                                                try provider.delete(contact, context: provider.newContext)
+                                            } catch {
+                                                print(error)
+                                            }
+                                        } label: {
+                                            Label("Delete", systemImage: "trash")
+                                                .tint(.red)
+                                        }
+                                        
+                                        Button {
+                                            contactToEdit = contact
+                                        } label: {
+                                            Label("Edit", systemImage: "pencil")
+                                                .tint(.orange)
+                                        }
+
+                                    }
                             }
                         }
                     }
@@ -41,9 +63,27 @@ struct ContactsView: View {
                 contactToEdit = nil
             }, content: { contact in
                 NavigationStack {
-                    CreateContactView(vm: .init(provider: provider, contact: contact))
+                    CreateContactView(vm: .init(provider: provider, contact: contact)) {
+                        haptic(.success)
+                        withAnimation(.spring().delay(0.25)) {
+                            self.shouldShowSuccess.toggle()
+                        }
+                    }
                 }
             })
+            .overlay {
+                if shouldShowSuccess {
+                    CheckMarkPopoverView()
+                        .transition(.scale.combined(with: .opacity))
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                                withAnimation(.spring()) {
+                                    self.shouldShowSuccess.toggle()
+                                }
+                            }
+                        }
+                }
+            }
             .navigationTitle("Contacts")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
