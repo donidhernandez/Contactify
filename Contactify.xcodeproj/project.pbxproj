@@ -11,6 +11,7 @@
 		F21768282A37EB0500521911 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768272A37EB0500521911 /* UserDefaultKeys.swift */; };
 		F217682A2A37F5F200521911 /* CheckMarkPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768292A37F5F200521911 /* CheckMarkPopoverView.swift */; };
 		F217682C2A3807F200521911 /* SearchConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217682B2A3807F200521911 /* SearchConfig.swift */; };
+		F21768342A3817A300521911 /* ContactifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768332A3817A300521911 /* ContactifyTests.swift */; };
 		F2723E852A33EE220005C6D1 /* CreateContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E842A33EE220005C6D1 /* CreateContactView.swift */; };
 		F2723E892A340DB40005C6D1 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E882A340DB40005C6D1 /* ContactViewModel.swift */; };
 		F2723E8C2A3415BB0005C6D1 /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */; };
@@ -33,11 +34,24 @@
 		F2A2141D2A33B9420062F25E /* NoContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A2141C2A33B9420062F25E /* NoContactsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F21768352A3817A300521911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A213DF2A3398D90062F25E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A213E62A3398DA0062F25E;
+			remoteInfo = Contactify;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F21768222A37B69000521911 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		F21768272A37EB0500521911 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		F21768292A37F5F200521911 /* CheckMarkPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkPopoverView.swift; sourceTree = "<group>"; };
 		F217682B2A3807F200521911 /* SearchConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfig.swift; sourceTree = "<group>"; };
+		F21768312A3817A300521911 /* ContactifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21768332A3817A300521911 /* ContactifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactifyTests.swift; sourceTree = "<group>"; };
+		F217683A2A381C4000521911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F2723E842A33EE220005C6D1 /* CreateContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactView.swift; sourceTree = "<group>"; };
 		F2723E882A340DB40005C6D1 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
@@ -62,6 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F217682E2A3817A300521911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2A213E42A3398DA0062F25E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +120,14 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		F21768322A3817A300521911 /* ContactifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F21768332A3817A300521911 /* ContactifyTests.swift */,
+			);
+			path = ContactifyTests;
+			sourceTree = "<group>";
+		};
 		F2723E8A2A34159C0005C6D1 /* Validator */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				F2A213E92A3398DA0062F25E /* Contactify */,
+				F21768322A3817A300521911 /* ContactifyTests */,
 				F2A213E82A3398DA0062F25E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F2A213E72A3398DA0062F25E /* Contactify.app */,
+				F21768312A3817A300521911 /* ContactifyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +157,7 @@
 		F2A213E92A3398DA0062F25E /* Contactify */ = {
 			isa = PBXGroup;
 			children = (
+				F217683A2A381C4000521911 /* Info.plist */,
 				F21768242A37EAD600521911 /* Base */,
 				F2A214152A33A4C30062F25E /* Components */,
 				F2A214022A339B5C0062F25E /* Extensions */,
@@ -218,6 +250,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F21768302A3817A300521911 /* ContactifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F21768372A3817A300521911 /* Build configuration list for PBXNativeTarget "ContactifyTests" */;
+			buildPhases = (
+				F217682D2A3817A300521911 /* Sources */,
+				F217682E2A3817A300521911 /* Frameworks */,
+				F217682F2A3817A300521911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F21768362A3817A300521911 /* PBXTargetDependency */,
+			);
+			name = ContactifyTests;
+			productName = ContactifyTests;
+			productReference = F21768312A3817A300521911 /* ContactifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F2A213E62A3398DA0062F25E /* Contactify */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2A213F52A3398DB0062F25E /* Build configuration list for PBXNativeTarget "Contactify" */;
@@ -245,6 +295,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					F21768302A3817A300521911 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F2A213E62A3398DA0062F25E;
+					};
 					F2A213E62A3398DA0062F25E = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -264,11 +318,19 @@
 			projectRoot = "";
 			targets = (
 				F2A213E62A3398DA0062F25E /* Contactify */,
+				F21768302A3817A300521911 /* ContactifyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F217682F2A3817A300521911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2A213E52A3398DA0062F25E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +343,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F217682D2A3817A300521911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21768342A3817A300521911 /* ContactifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2A213E32A3398DA0062F25E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,7 +382,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F21768362A3817A300521911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A213E62A3398DA0062F25E /* Contactify */;
+			targetProxy = F21768352A3817A300521911 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F21768382A3817A300521911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2K78V2KXMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donihernandez.ContactifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contactify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contactify";
+			};
+			name = Debug;
+		};
+		F21768392A3817A300521911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2K78V2KXMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donihernandez.ContactifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contactify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contactify";
+			};
+			name = Release;
+		};
 		F2A213F32A3398DB0062F25E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -438,9 +552,9 @@
 				DEVELOPMENT_TEAM = 2K78V2KXMZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Contactify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,9 +581,9 @@
 				DEVELOPMENT_TEAM = 2K78V2KXMZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Contactify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,6 +602,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F21768372A3817A300521911 /* Build configuration list for PBXNativeTarget "ContactifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21768382A3817A300521911 /* Debug */,
+				F21768392A3817A300521911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F2A213E22A3398D90062F25E /* Build configuration list for PBXProject "Contactify" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
