@@ -103,6 +103,8 @@ struct ContactsView: View {
                             .font(.title3)
                             .fontDesign(.rounded)
                     }
+                    .accessibilityIdentifier("createButton")
+                    .accessibilityHint(Text("A sheet with a form will show up to allow you to create a new contact"))
                     
                 }
                 

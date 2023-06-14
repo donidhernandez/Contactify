@@ -29,7 +29,7 @@ final class Contact: NSManagedObject, Identifiable {
         super.awakeFromInsert()
         
         setPrimitiveValue(Date.now, forKey: "dayOfBirth")
-        setPrimitiveValue(Bool.random(), forKey: "isFavorite")
+        setPrimitiveValue(false, forKey: "isFavorite")
     }
 }
 
@@ -54,7 +54,7 @@ extension Contact {
         case .all:
             return config.query.isEmpty ? NSPredicate(value: true) : NSPredicate(format: "firstName CONTAINS[cd] %@ OR lastName CONTAINS[cd] %@", config.query, config.query)
         case .fave:
-            return config.query.isEmpty ? NSPredicate(format: "isFavorite == %@", NSNumber(value: true)) : NSPredicate(format: "firstName CONTAINS[cd] %@ OR lastName CONTAINS[cd] %@ AND isFavorite == %@", config.query, config.query, NSNumber(value: true))
+            return config.query.isEmpty ? NSPredicate(format: "isFavorite == %@", NSNumber(value: true)) : NSPredicate(format: "(firstName CONTAINS[cd] %@ OR lastName CONTAINS[cd] %@) AND isFavorite == %@", config.query, config.query, NSNumber(value: true))
         }
     }
     

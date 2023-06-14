@@ -39,28 +39,37 @@ struct CreateContactView: View {
                 TextField("First Name", text: $vm.contact.firstName)
                     .focused($focusedField, equals: .firstName)
                     .keyboardType(.namePhonePad)
+                    .accessibilityIdentifier("firstNameTxtField")
                 TextField("Last Name", text: $vm.contact.lastName)
                     .focused($focusedField, equals: .lastName)
                     .keyboardType(.namePhonePad)
+                    .accessibilityIdentifier("lastNameTxtField")
                 TextField("Email", text: $vm.contact.email)
                     .focused($focusedField, equals: .email)
                     .keyboardType(.emailAddress)
+                    .accessibilityIdentifier("emailTxtField")
                 TextField("Phone Number", text: $vm.contact.phoneNumber)
                     .focused($focusedField, equals: .phoneNumber)
                     .keyboardType(.phonePad)
+                    .accessibilityIdentifier("phoneNumberTxtField")
                 DatePicker("Birthday", selection: $vm.contact.dayOfBirth, displayedComponents: [.date])
                     .datePickerStyle(.compact)
                     .focused($focusedField, equals: .dayOfBirth)
+                    .accessibilityIdentifier("birthDayPicker")
+                   
                 Toggle("Favorite", isOn: $vm.contact.isFavorite)
                     .focused($focusedField, equals: .isFavorite)
+                    .accessibilityIdentifier("favoriteToggle")
                 
             } header: {
                 Text("General")
             }
             
             Section {
-                TextField("", text: $vm.contact.notes, axis: .vertical)
+                TextField("Notes...", text: $vm.contact.notes)
+                    .accessibilityIdentifier("notesTxtField")
                     .focused($focusedField, equals: .notes)
+                    
             } header: {
                 Text("Notes")
             }
@@ -93,6 +102,7 @@ struct CreateContactView: View {
                     Text("Done")
                 }
                 .disabled(!vm.contact.isValid)
+                .accessibilityIdentifier("submitBtn")
             }
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
@@ -100,6 +110,7 @@ struct CreateContactView: View {
                 } label: {
                     Text("Cancel")
                 }
+                .accessibilityIdentifier("cancelButton")
 
             }
         }

@@ -11,10 +11,14 @@
 		F21768282A37EB0500521911 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768272A37EB0500521911 /* UserDefaultKeys.swift */; };
 		F217682A2A37F5F200521911 /* CheckMarkPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768292A37F5F200521911 /* CheckMarkPopoverView.swift */; };
 		F217682C2A3807F200521911 /* SearchConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217682B2A3807F200521911 /* SearchConfig.swift */; };
-		F21768342A3817A300521911 /* ContactifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21768332A3817A300521911 /* ContactifyTests.swift */; };
+		F2400DB42A396A1400442B63 /* ContactScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2400DB32A396A1400442B63 /* ContactScreenUITests.swift */; };
+		F2400DB72A3A2BDE00442B63 /* CreateScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2400DB62A3A2BDE00442B63 /* CreateScreenUITests.swift */; };
 		F2723E852A33EE220005C6D1 /* CreateContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E842A33EE220005C6D1 /* CreateContactView.swift */; };
 		F2723E892A340DB40005C6D1 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E882A340DB40005C6D1 /* ContactViewModel.swift */; };
 		F2723E8C2A3415BB0005C6D1 /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */; };
+		F28851152A38DF8A00573189 /* Thread+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28851142A38DF8A00573189 /* Thread+Extension.swift */; };
+		F28851172A38E22500573189 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28851162A38E22500573189 /* ModelTests.swift */; };
+		F28851192A38ED9900573189 /* CreateValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28851182A38ED9900573189 /* CreateValidatorTests.swift */; };
 		F2A213EB2A3398DA0062F25E /* ContactifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A213EA2A3398DA0062F25E /* ContactifyApp.swift */; };
 		F2A213EF2A3398DB0062F25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A213EE2A3398DB0062F25E /* Assets.xcassets */; };
 		F2A213F22A3398DB0062F25E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A213F12A3398DB0062F25E /* Preview Assets.xcassets */; };
@@ -42,6 +46,13 @@
 			remoteGlobalIDString = F2A213E62A3398DA0062F25E;
 			remoteInfo = Contactify;
 		};
+		F2400DAD2A3969C700442B63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2A213DF2A3398D90062F25E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A213E62A3398DA0062F25E;
+			remoteInfo = Contactify;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -50,11 +61,16 @@
 		F21768292A37F5F200521911 /* CheckMarkPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMarkPopoverView.swift; sourceTree = "<group>"; };
 		F217682B2A3807F200521911 /* SearchConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfig.swift; sourceTree = "<group>"; };
 		F21768312A3817A300521911 /* ContactifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F21768332A3817A300521911 /* ContactifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactifyTests.swift; sourceTree = "<group>"; };
 		F217683A2A381C4000521911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F2400DA72A3969C700442B63 /* ContactifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2400DB32A396A1400442B63 /* ContactScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactScreenUITests.swift; sourceTree = "<group>"; };
+		F2400DB62A3A2BDE00442B63 /* CreateScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScreenUITests.swift; sourceTree = "<group>"; };
 		F2723E842A33EE220005C6D1 /* CreateContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContactView.swift; sourceTree = "<group>"; };
 		F2723E882A340DB40005C6D1 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		F2723E8B2A3415BB0005C6D1 /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
+		F28851142A38DF8A00573189 /* Thread+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+Extension.swift"; sourceTree = "<group>"; };
+		F28851162A38E22500573189 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		F28851182A38ED9900573189 /* CreateValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidatorTests.swift; sourceTree = "<group>"; };
 		F2A213E72A3398DA0062F25E /* Contactify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contactify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A213EA2A3398DA0062F25E /* ContactifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactifyApp.swift; sourceTree = "<group>"; };
 		F2A213EE2A3398DB0062F25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +93,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F217682E2A3817A300521911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2400DA42A3969C700442B63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,9 +146,35 @@
 		F21768322A3817A300521911 /* ContactifyTests */ = {
 			isa = PBXGroup;
 			children = (
-				F21768332A3817A300521911 /* ContactifyTests.swift */,
+				F28851132A38DEAD00573189 /* Form */,
+				F28851122A38DEA800573189 /* Model */,
 			);
 			path = ContactifyTests;
+			sourceTree = "<group>";
+		};
+		F2400DA82A3969C700442B63 /* ContactifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2400DB52A3A29E200442B63 /* Create */,
+				F2400DB22A3969EE00442B63 /* Contacts */,
+			);
+			path = ContactifyUITests;
+			sourceTree = "<group>";
+		};
+		F2400DB22A3969EE00442B63 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				F2400DB32A396A1400442B63 /* ContactScreenUITests.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F2400DB52A3A29E200442B63 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				F2400DB62A3A2BDE00442B63 /* CreateScreenUITests.swift */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 		F2723E8A2A34159C0005C6D1 /* Validator */ = {
@@ -136,11 +185,28 @@
 			path = Validator;
 			sourceTree = "<group>";
 		};
+		F28851122A38DEA800573189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F28851162A38E22500573189 /* ModelTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F28851132A38DEAD00573189 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				F28851182A38ED9900573189 /* CreateValidatorTests.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
 		F2A213DE2A3398D90062F25E = {
 			isa = PBXGroup;
 			children = (
 				F2A213E92A3398DA0062F25E /* Contactify */,
 				F21768322A3817A300521911 /* ContactifyTests */,
+				F2400DA82A3969C700442B63 /* ContactifyUITests */,
 				F2A213E82A3398DA0062F25E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +216,7 @@
 			children = (
 				F2A213E72A3398DA0062F25E /* Contactify.app */,
 				F21768312A3817A300521911 /* ContactifyTests.xctest */,
+				F2400DA72A3969C700442B63 /* ContactifyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +299,7 @@
 				F2A214032A339B700062F25E /* EnvironmentValues+Extension.swift */,
 				F2A2140B2A33A1080062F25E /* String+Extension.swift */,
 				F2A2140F2A33A3E80062F25E /* Color+Extension.swift */,
+				F28851142A38DF8A00573189 /* Thread+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +336,24 @@
 			productReference = F21768312A3817A300521911 /* ContactifyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F2400DA62A3969C700442B63 /* ContactifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2400DB12A3969C700442B63 /* Build configuration list for PBXNativeTarget "ContactifyUITests" */;
+			buildPhases = (
+				F2400DA32A3969C700442B63 /* Sources */,
+				F2400DA42A3969C700442B63 /* Frameworks */,
+				F2400DA52A3969C700442B63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2400DAE2A3969C700442B63 /* PBXTargetDependency */,
+			);
+			name = ContactifyUITests;
+			productName = ContactifyUITests;
+			productReference = F2400DA72A3969C700442B63 /* ContactifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F2A213E62A3398DA0062F25E /* Contactify */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2A213F52A3398DB0062F25E /* Build configuration list for PBXNativeTarget "Contactify" */;
@@ -297,6 +383,12 @@
 				TargetAttributes = {
 					F21768302A3817A300521911 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
+						TestTargetID = F2A213E62A3398DA0062F25E;
+					};
+					F2400DA62A3969C700442B63 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 						TestTargetID = F2A213E62A3398DA0062F25E;
 					};
 					F2A213E62A3398DA0062F25E = {
@@ -319,12 +411,20 @@
 			targets = (
 				F2A213E62A3398DA0062F25E /* Contactify */,
 				F21768302A3817A300521911 /* ContactifyTests */,
+				F2400DA62A3969C700442B63 /* ContactifyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F217682F2A3817A300521911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2400DA52A3969C700442B63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,7 +447,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F21768342A3817A300521911 /* ContactifyTests.swift in Sources */,
+				F28851192A38ED9900573189 /* CreateValidatorTests.swift in Sources */,
+				F28851172A38E22500573189 /* ModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2400DA32A3969C700442B63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2400DB42A396A1400442B63 /* ContactScreenUITests.swift in Sources */,
+				F2400DB72A3A2BDE00442B63 /* CreateScreenUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +484,7 @@
 				F2A214042A339B700062F25E /* EnvironmentValues+Extension.swift in Sources */,
 				F217682C2A3807F200521911 /* SearchConfig.swift in Sources */,
 				F2A2140E2A33A34F0062F25E /* ContactRowView.swift in Sources */,
+				F28851152A38DF8A00573189 /* Thread+Extension.swift in Sources */,
 				F2723E8C2A3415BB0005C6D1 /* CreateValidator.swift in Sources */,
 				F21768232A37B69000521911 /* HapticsManager.swift in Sources */,
 				F2A214082A339E2C0062F25E /* ContactsView.swift in Sources */,
@@ -388,6 +499,11 @@
 			target = F2A213E62A3398DA0062F25E /* Contactify */;
 			targetProxy = F21768352A3817A300521911 /* PBXContainerItemProxy */;
 		};
+		F2400DAE2A3969C700442B63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A213E62A3398DA0062F25E /* Contactify */;
+			targetProxy = F2400DAD2A3969C700442B63 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -395,6 +511,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2K78V2KXMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donihernandez.ContactifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contactify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contactify";
+			};
+			name = Debug;
+		};
+		F21768392A3817A300521911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2K78V2KXMZ;
@@ -407,23 +544,42 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contactify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contactify";
 			};
-			name = Debug;
+			name = Release;
 		};
-		F21768392A3817A300521911 /* Release */ = {
+		F2400DAF2A3969C700442B63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2K78V2KXMZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.donihernandez.ContactifyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donihernandez.ContactifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Contactify;
+			};
+			name = Debug;
+		};
+		F2400DB02A3969C700442B63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2K78V2KXMZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donihernandez.ContactifyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contactify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contactify";
+				TEST_TARGET_NAME = Contactify;
 			};
 			name = Release;
 		};
@@ -607,6 +763,15 @@
 			buildConfigurations = (
 				F21768382A3817A300521911 /* Debug */,
 				F21768392A3817A300521911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2400DB12A3969C700442B63 /* Build configuration list for PBXNativeTarget "ContactifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2400DAF2A3969C700442B63 /* Debug */,
+				F2400DB02A3969C700442B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

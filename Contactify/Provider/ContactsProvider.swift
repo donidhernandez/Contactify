@@ -24,7 +24,7 @@ final class ContactsProvider {
     
     private init () {
         persistentContainer = NSPersistentContainer(name: "ContactsDataModel")
-        if EnvironmentValues.isPreview {
+        if EnvironmentValues.isPreview || Thread.current.isRunningXCTest {
             persistentContainer.persistentStoreDescriptions.first?.url = .init(fileURLWithPath: "/dev/null")
         }
         persistentContainer.viewContext.automaticallyMergesChangesFromParent = true
@@ -56,3 +56,4 @@ final class ContactsProvider {
         }
     }
 }
+
